@@ -1,0 +1,12 @@
+.skillTag {
+	background-color: var(--green-bg);
+	border-radius: 50px;
+	font-size: 1.3em;
+	font-weight: 400;
+	padding: .4em 1em;
+	color: #fff;
+	display: inline-flex;
+	margin: .2em;
+	white-space: nowrap;
+	line-height: 1;
+}

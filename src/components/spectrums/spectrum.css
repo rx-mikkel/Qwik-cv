@@ -1,0 +1,59 @@
+.skillBar {
+	border: 1px solid var(--link);
+	background-color: var(--link);
+	margin-bottom: 1.2em; 
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: inset 0px 4px 9px -5px rgba(0, 0, 0, .8);
+}
+
+.skillInner {
+	background-color: #9de0ad;
+	height: .8em;
+	box-shadow: inset -40px 0px 56px -30px rgba(200, 255, 220, .8);
+}
+
+.skillTag {
+	background-color: var(--green-bg);
+	border-radius: 50px;
+	font-size: 1.3em;
+	font-weight: 400;
+	padding: .4em 1em;
+	color: #fff;
+	display: inline-flex;
+	margin: .2em;
+	white-space: nowrap;
+	line-height: 1;
+}
+
+.spectrumDiv {
+	vertical-align: top;
+	display: inline-block;
+	padding: 2em;
+	width: 100%;
+	min-width: 100%;
+}
+
+.spectrumCaption {
+	display: flex;
+	justify-content: space-between;
+}
+
+.spectrumCaption p {
+    font-size: 14px;
+}
+
+.focusInner {
+	background-color: #fd30a8;
+	height: .8em;
+}
+
+/* ==========================================================================
+   Over 460 width
+   ========================================================================== */
+@media screen and (min-width: 460px) {
+	.spectrumDiv {
+		width: 50%;
+		min-width: 50%;
+	}
+}

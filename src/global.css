@@ -1,0 +1,297 @@
+/**
+ * WHAT IS THIS FILE?
+ *
+ * Globally applied styles. No matter which components are in the page or matching route,
+ * the styles in here will be applied to the Document, without any sort of CSS scoping.
+ *
+ */
+
+:root {
+	--font-stack: 'Roboto', sans-serif;
+
+	--font-color: #2d2650;
+	--grey-background: #fcf5fc;
+
+	--link: #5f0986;
+
+	--blue-bg: #25707e;
+	--green-bg: #018471;
+
+	--base-margin: 1em;
+
+	--base-rounding: 0px;
+}
+
+html {
+	display: flex;
+	flex: 1;
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+::selection {
+	background: rgba(7, 151, 177, 0.3);
+	text-shadow: none; }
+
+body {
+	font-size: 10px;
+	color: var(--font-color);
+	background-color: var(--grey-background);
+	padding: 0em;
+ 	margin: 0em;
+	font-family: var(--font-stack);
+	font-weight: 400;
+	display: flex;
+	flex: 1;
+}
+
+
+p, a {
+	font-size: 1.5em;
+	line-height: 1.5em;
+	margin: 0em; 
+	transition: all .2s ease;
+}
+
+p a {
+	font-size: 1em;
+}
+
+a, a:visited {
+	color: var(--link);
+}
+
+a:hover {
+	color: var(--link);
+}
+
+.textContent p + p {
+	margin-top: 1.4em;
+}
+
+h1 {
+	font-size: 2.2em;
+	font-weight: 700;
+	margin: 0px;
+}
+
+h2 {
+	font-size: 1.8em;
+	font-weight: 400;
+	line-height: 52px;
+	display: inline-block;
+	margin: 0px;
+	vertical-align: top;
+}	
+
+h3 {
+	font-size: 1.8em;
+	font-weight: 700;
+	margin: .4em 0px;
+}
+
+h4 {
+	margin: 1.2em 0em;
+	font-size: 1.5em;
+	color: var(--blue-bg);
+	font-weight: 300; 
+}
+
+
+
+
+
+
+.wrap {
+	display: flex;
+	flex: 1;
+	min-width: 30em;
+	max-width: 96em; 
+}
+
+.section {
+	padding: 2em;
+}
+
+main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+section {
+	display: flex;
+	flex: 1;
+	justify-content: center;
+}
+
+.main-layout {
+	flex-direction: column;
+}
+
+.column {
+	width: 100%; 
+}
+
+
+
+.sectionHeader {
+	margin-bottom: 1em;
+	display: flex;
+	align-items: center;
+}
+
+.sectionHeader a h2 {
+	text-decoration: underline;
+}
+
+.icon {
+	width: 5.2em;
+	height: 5.2em;
+	margin-right: 1em;
+	border-radius: 50%;
+	background-color: var(--blue-bg);
+	background-position: center;
+}
+
+.icon.linkIcon {
+	background-color: var(--link);
+	display: inline-block;
+}
+
+.icon.linkIcon:hover {
+	background-color: var(--link);
+}
+
+
+
+.spectrums {
+	margin: 1em -2em 0;
+}
+
+.raised {
+	box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.24), 2px 2px 7px 1px rgba(0,0,0,.32);
+    transform: scale(1);
+    transition: all .15s ease;
+}
+
+.raised:hover {
+	box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.28), 7px 7px 14px rgba(0,0,0,.3);
+	transform: translate(-1px, -4px) scale(1.1);
+}
+
+.experience {
+	padding: 2em 0em;
+	display: flex;
+	flex-direction: column;
+}
+
+.experience + .experience {
+	border-top: 1px solid #cfcfcf;
+}
+
+.btn-secondary {
+	background-color: #fff;
+	color: var(--link);
+	border: none;
+	font-weight: 700;
+	border-radius: 50px;
+	padding: .5em 1.5em;
+	text-decoration: none;
+	display: inline-block;
+	transition: all .25s ease;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.github {
+	background-image: url(../../images/gh.png);
+	background-size: 42px; 
+	background-repeat: no-repeat;
+}
+
+
+
+
+
+/* ==========================================================================
+   Over 460 width
+   ========================================================================== */
+   @media screen and (min-width: 460px) {
+	h1 {
+		font-size: 3.2em;
+	}
+	
+	h2 {
+		font-size: 2.2em;
+	}	
+
+	.section_right .section {
+		width: 50%;
+		display: inline-flex;
+		flex-direction: column;
+	}
+
+}
+/* ==========================================================================
+   Over 720 width
+   ========================================================================== */
+@media screen and (min-width: 720px) {
+
+	.footer {
+		background-image: linear-gradient(43deg, #bb2fb2 0%, #610766 46%, #32aaf0 100%);
+	}
+}
+/* ==========================================================================
+   Over 980 width
+   ========================================================================== */
+@media screen and (min-width: 800px) {
+	.wrap {
+		padding: 0 2em;
+	}
+
+	.wrap.main-layout {
+		flex-direction: row;
+	}
+
+	.section_left, .section_right {
+		display: inline-flex;
+		flex-direction: column;
+	}
+
+	.section_right {
+		flex: 1;
+		padding-left: 4em;
+	}
+
+	.section_right .section {
+		width: 100%;
+	}
+
+	.section {
+		padding: 3em 0em; 
+	}
+
+	.section_left {
+		flex: 2;
+	}
+
+	.section_left.column {
+		width: 50%; 
+	}
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+	display: none !important;
+	visibility: hidden; 
+}
+
