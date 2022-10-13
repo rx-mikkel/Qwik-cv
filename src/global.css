@@ -13,6 +13,7 @@
 	--grey-background: #fcf5fc;
 
 	--link: #5f0986;
+	--link-light: #8618b9;
 
 	--blue-bg: #25707e;
 	--green-bg: #018471;
@@ -67,7 +68,7 @@ a, a:visited {
 }
 
 a:hover {
-	color: var(--link);
+	color: var(--link-light);
 }
 
 .textContent p + p {
@@ -165,7 +166,7 @@ section {
 }
 
 .icon.linkIcon:hover {
-	background-color: var(--link);
+	background-color: var(--link-light);
 }
 
 

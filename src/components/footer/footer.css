@@ -24,7 +24,7 @@ footer {
 }
 
 .top:hover {
-	background-color: var(--link);
+	background-color: var(--link-light);
 }
 
 .linked-in {
