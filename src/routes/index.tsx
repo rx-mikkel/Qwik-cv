@@ -28,7 +28,9 @@ export default component$(() => {
 
 				<div class="section">
 					<div class="sectionHeader" style="margin-bottom: 0px;">
-						<div class="icon" style={{backgroundImage: 'url(../../images/experience.png)'}}></div>
+						<div class="icon">
+							<img src="../../images/experience.png" />
+						</div>
 						<h2>Experience</h2>
 					</div>
 					<div>
@@ -47,7 +49,9 @@ export default component$(() => {
 
 				<div class="section">
 					<div class="sectionHeader">
-						<div class="icon" style={{backgroundImage: 'url(../../images/skills.png)'}}></div>
+						<div class="icon">
+							<img src="../../images/skills.png" />
+						</div>
 						<h2>Skills</h2>
 					</div>
 					<div>
@@ -59,7 +63,9 @@ export default component$(() => {
 
 				<div class="section">
 					<div class="sectionHeader">
-					<div class="icon" style={{backgroundImage: 'url(../../images/skills.png)'}}></div>
+						<div class="icon">
+							<img src="../../images/skills.png" />
+						</div>
 						<h2>Tools</h2>
 					</div>
 					<div class="column">
@@ -69,7 +75,9 @@ export default component$(() => {
 
 				<div class="section">
 					<div class="sectionHeader">
-						<div class="icon" style={{backgroundImage: 'url(../../images/lang.png)'}}></div>
+						<div class="icon">
+							<img src="../../images/lang.png" />
+						</div>
 						<h2>Languages</h2>
 					</div>
 					<div>
@@ -81,7 +89,9 @@ export default component$(() => {
 
 				<div class="section" style="border-bottom: none;">
 					<div class="sectionHeader">
-						<div class="icon" style={{backgroundImage: 'url(../../images/activities.png)'}}></div>
+						<div class="icon">
+							<img src="../../images/activities.png" />
+						</div>
 						<h2>Activities</h2>
 					</div>
 					<div>
@@ -94,7 +104,9 @@ export default component$(() => {
 				<div class="section">
 				<div class="sectionHeader">
 					<a style="font-size: 1em;" href="https://github.com/rx-mikkel/" target="_blank">
-						<div class="icon linkIcon raised github"></div>
+						<div class="icon linkIcon raised github">
+							<img src="../../images/gh.png" />
+						</div>
 						<h2>GitHub</h2>
 					</a>
 				</div>

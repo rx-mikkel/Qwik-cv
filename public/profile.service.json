@@ -128,30 +128,30 @@
 	   }
 	],
 	"tools":[
-	   {
-		  "name":"React",
-		  "rating":93
-	   },
-	   {
-		  "name":"Next.js",
-		  "rating":93
-	   },
-	   {
-		  "name":"Angular",
-		  "rating":93
-	   },
-	   {
-		  "name":"JavaScript",
-		  "rating":92
-	   },
-	   {
-		  "name":"TypeScript",
-		  "rating":81
-	   },
-	   {
-		  "name":"Git",
-		  "rating":72
-	   }
+		{
+			"name":"Qwik",
+			"rating":38
+		},
+		{
+			"name":"TypeScript",
+			"rating":81
+		},
+		{
+			"name":"JS",
+			"rating":92
+		},
+		{
+			"name":"Angular",
+			"rating":93
+		},
+		{
+			"name":"React",
+			"rating":93
+		},
+		{
+			"name":"Git",
+			"rating":72
+		}
 	],
 	"zones":[
 	   {

@@ -7,25 +7,6 @@
 	box-shadow: inset 0px 4px 9px -5px rgba(0, 0, 0, .8);
 }
 
-.skillInner {
-	background-color: #9de0ad;
-	height: .8em;
-	box-shadow: inset -40px 0px 56px -30px rgba(200, 255, 220, .8);
-}
-
-.skillTag {
-	background-color: var(--green-bg);
-	border-radius: 50px;
-	font-size: 1.3em;
-	font-weight: 400;
-	padding: .4em 1em;
-	color: #fff;
-	display: inline-flex;
-	margin: .2em;
-	white-space: nowrap;
-	line-height: 1;
-}
-
 .spectrumDiv {
 	vertical-align: top;
 	display: inline-block;
@@ -44,8 +25,9 @@
 }
 
 .focusInner {
-	background-color: #fd30a8;
+	background-color: rgba(253, 48, 168, .8);
 	height: .8em;
+	background-image: linear-gradient(90deg, rgba(255, 27, 65, 0) 20%, rgba(255, 27, 65, 0.42) 50%, rgba(255, 27, 65, 0) 80%);
 }
 
 /* ==========================================================================

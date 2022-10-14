@@ -12,11 +12,13 @@
 	--font-color: #2d2650;
 	--grey-background: #fcf5fc;
 
-	--link: #5f0986;
+	--link: #53008a;
 	--link-light: #8618b9;
 
-	--blue-bg: #25707e;
-	--green-bg: #018471;
+	--blue-text: #007c9b;
+
+	--blue-bg: #24b8dd;
+	--green-bg: #0c848d;
 
 	--base-margin: 1em;
 
@@ -99,7 +101,7 @@ h3 {
 h4 {
 	margin: 1.2em 0em;
 	font-size: 1.5em;
-	color: var(--blue-bg);
+	color: var(--blue-text);
 	font-weight: 300; 
 }
 
@@ -156,13 +158,22 @@ section {
 	height: 5.2em;
 	margin-right: 1em;
 	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	background-color: var(--blue-bg);
-	background-position: center;
+	background-image: radial-gradient(circle, rgba(0,212,255,0) 0%, rgb(7, 80, 163) 100%);
+}
+
+.icon img {
+	max-width: 4.8em;
+	filter: drop-shadow(0 -1px 2px rgba(43, 4, 68, .84))
 }
 
 .icon.linkIcon {
 	background-color: var(--link);
-	display: inline-block;
+	background-image: radial-gradient(circle, rgb(163, 25, 255) 0%, rgba(7, 80, 163, 0) 100%);
+	display: inline-flex;
 }
 
 .icon.linkIcon:hover {
@@ -210,10 +221,8 @@ section {
 	cursor: pointer;
 }
 
-.github {
-	background-image: url(../../images/gh.png);
-	background-size: 42px; 
-	background-repeat: no-repeat;
+.github img {
+	max-width: 42px;
 }
 
 

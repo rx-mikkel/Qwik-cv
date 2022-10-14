@@ -10,14 +10,14 @@ export default component$((skill: skillProps) => {
 	useStylesScoped$(styles);
 
 	const color1 = {
-		red: 118,
-		green: 224,
-		blue: 194
+		red: 253,
+		green: 48,
+		blue: 168
 	};
 	const color2 = {
-		red: 37,
-		green: 112,
-		blue: 126
+		red: 84,
+		green: 0,
+		blue: 138
 	};
 
 	const calculateColor = (percentage: number) => {
