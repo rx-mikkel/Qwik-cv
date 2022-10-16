@@ -1,6 +1,6 @@
 header {
 	background-color: #610766;
-	background-image: linear-gradient(243deg, #ce71f3 0%, #843df5 46%, #51d8f0 100%);
+	background-image: linear-gradient(243deg, #ce71f3 0%, #843df5 100%);
 	border-bottom: 1px solid rgba(0,0,0,.15);
 	margin-bottom: 6em;
 	box-shadow: inset 0px -4px 12px -6px rgba(0,0,0,.15);
@@ -9,6 +9,7 @@ header {
 	justify-content: center;
 	position: relative;
 	padding-bottom: 7.5em;
+	color: #33044e
 }
 
 .bubble {
@@ -23,4 +24,14 @@ header {
 	left: 50%;
 	margin-left: -7.5em;
 	box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.18), 2px 2px 7px 1px rgba(0,0,0,.24);
+}
+
+/* ==========================================================================
+   Over 720 width
+   ========================================================================== */
+   @media screen and (min-width: 720px) {
+
+	header {
+		background-image: linear-gradient(243deg, #ce71f3 0%, #843df5 46%, #51d8f0 100%);
+	}
 }

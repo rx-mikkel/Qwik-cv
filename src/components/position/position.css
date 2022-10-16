@@ -1,17 +1,16 @@
 .experience {
 	padding: 2em;
     margin: 2em 0;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, .4);
     border-radius: var(--base-rounding);
 	display: flex;
 	flex-direction: column;
-    box-shadow: 1px 1px 8px rgba(27, 4, 68, 0.05), 2px 4px 22px rgba(72, 4, 104,.15);
+    box-shadow: inset 1px 1px 0 #fff, 1px 2px 12px rgba(27, 4, 68, 0.08), 2px 4px 28px rgba(72, 4, 104,.16);
 }
 
 .companyLink {
     font-size: 15px;
     font-weight: 400;
-    color: inherit;
 }
 
 .link-container {
