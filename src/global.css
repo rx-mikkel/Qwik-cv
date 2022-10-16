@@ -10,7 +10,7 @@
 	--font-stack: 'Roboto', sans-serif;
 
 	--font-color: #2d2650;
-	--grey-background: #fcf5fc;
+	--grey-background: #fcf6fd;
 
 	--link: #53008a;
 	--link-light: #8618b9;
@@ -22,7 +22,7 @@
 
 	--base-margin: 1em;
 
-	--base-rounding: 0px;
+	--base-rounding: 4px;
 }
 
 html {
@@ -114,7 +114,7 @@ h4 {
 	display: flex;
 	flex: 1;
 	min-width: 30em;
-	max-width: 96em; 
+	max-width: 110em; 
 }
 
 .section {
@@ -187,24 +187,14 @@ section {
 }
 
 .raised {
-	box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.24), 2px 2px 7px 1px rgba(0,0,0,.32);
+	box-shadow: 1px 2px 4px rgba(27, 4, 68, 0.32), 2px 2px 7px 1px rgba(72, 4, 104, 0.48);
     transform: scale(1);
     transition: all .15s ease;
 }
 
 .raised:hover {
-	box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.28), 7px 7px 14px rgba(0,0,0,.3);
+	box-shadow: 2px 4px 8px rgba(27, 4, 68, 0.28), 7px 7px 14px rgba(72, 4, 104,.3);
 	transform: translate(-1px, -4px) scale(1.1);
-}
-
-.experience {
-	padding: 2em 0em;
-	display: flex;
-	flex-direction: column;
-}
-
-.experience + .experience {
-	border-top: 1px solid #cfcfcf;
 }
 
 .btn-secondary {

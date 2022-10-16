@@ -1,3 +1,13 @@
+.experience {
+	padding: 2em;
+    margin: 2em 0;
+    background-color: #fff;
+    border-radius: var(--base-rounding);
+	display: flex;
+	flex-direction: column;
+    box-shadow: 1px 1px 8px rgba(27, 4, 68, 0.05), 2px 4px 22px rgba(72, 4, 104,.15);
+}
+
 .companyLink {
     font-size: 15px;
     font-weight: 400;
