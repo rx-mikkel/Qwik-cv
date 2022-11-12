@@ -21,10 +21,10 @@ footer {
 	cursor: pointer;
 	background-position: 50%;
 	background-image: url(../../images/up.png);
-}
 
-.top:hover {
-	background-color: var(--link-light);
+	&:hover {
+		background-color: var(--link-light);
+	}
 }
 
 .linked-in {

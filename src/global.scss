@@ -53,7 +53,6 @@ body {
 	flex: 1;
 }
 
-
 p, a {
 	font-size: 1.5em;
 	line-height: 1.5em;
@@ -147,10 +146,10 @@ section {
 	margin-bottom: 1em;
 	display: flex;
 	align-items: center;
-}
 
-.sectionHeader a h2 {
-	text-decoration: underline;
+	a h2 {
+		text-decoration: underline;
+	}
 }
 
 .icon {
@@ -163,24 +162,22 @@ section {
 	justify-content: center;
 	background-color: var(--blue-bg);
 	background-image: radial-gradient(circle, rgba(0,212,255,0) 0%, rgb(7, 80, 163) 100%);
+
+	img {
+		max-width: 4.8em;
+		filter: drop-shadow(0 -1px 2px rgba(43, 4, 68, .84));
+	}
+
+	&.linkIcon {
+		background-color: var(--link);
+		background-image: radial-gradient(circle, rgb(163, 25, 255) 0%, rgba(7, 80, 163, 0) 100%);
+		display: inline-flex;
+
+		&:hover {
+			background-color: var(--link-light);
+		}
+	}
 }
-
-.icon img {
-	max-width: 4.8em;
-	filter: drop-shadow(0 -1px 2px rgba(43, 4, 68, .84));
-}
-
-.icon.linkIcon {
-	background-color: var(--link);
-	background-image: radial-gradient(circle, rgb(163, 25, 255) 0%, rgba(7, 80, 163, 0) 100%);
-	display: inline-flex;
-}
-
-.icon.linkIcon:hover {
-	background-color: var(--link-light);
-}
-
-
 
 .spectrums {
 	margin: 1em -2em 0;
@@ -190,11 +187,11 @@ section {
 	box-shadow: 1px 2px 4px rgba(27, 4, 68, 0.32), 2px 2px 7px 1px rgba(72, 4, 104, 0.48);
     transform: scale(1);
     transition: all .15s ease;
-}
 
-.raised:hover {
-	box-shadow: 2px 4px 8px rgba(27, 4, 68, 0.28), 7px 7px 14px rgba(72, 4, 104,.3);
-	transform: translate(-1px, -4px) scale(1.1);
+	&:hover {
+		box-shadow: 2px 4px 8px rgba(27, 4, 68, 0.28), 7px 7px 14px rgba(72, 4, 104,.3);
+		transform: translate(-1px, -4px) scale(1.1);
+	}
 }
 
 .btn-secondary {
