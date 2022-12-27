@@ -5,7 +5,7 @@ import SkillBar from '~/components/skill-bar/skill-bar';
 import Skill from '~/components/skill/skill';
 import Spectrum from '~/components/spectrums/spectrum';
 //import { Link } from '@builder.io/qwik-city';
-import profile from '../../public/profile.service.json';
+import profile from '../profile.service.json';
 
 export default component$(() => {
 	const store = useStore({ allPositions: false });
@@ -16,13 +16,13 @@ export default component$(() => {
 
 			<div class="section_left">
 				<div class="section">
-					<div class="textContent">{profile.intro.map((paragraph) => (<p>{paragraph}</p>))}</div>
+					<div class="textContent">{profile.intro.map((paragraph, index) => (<p key={index}>{paragraph}</p>))}</div>
 
 					<br /><br />
 					<h3>Relative strength</h3>
 					<p>Where do I provide most value?</p>
 					<div class="spectrums">
-						{profile.zones.map((zone) => (<Spectrum startName={zone.startName} endName={zone.endName} description={zone.description} start={zone.start} end={zone.end} />))}
+						{profile.zones.map((zone, index) => (<Spectrum key={index} startName={zone.startName} endName={zone.endName} description={zone.description} start={zone.start} end={zone.end} />))}
 					</div>
 				</div>
 
@@ -35,8 +35,8 @@ export default component$(() => {
 					</div>
 					<div>
 						{store.allPositions ? 
-						profile.positions.map((position) => (<Position title={position.title} company={position.company} companyWebsite={position.companyWebsite} period={position.period} description={position.description} links={position.links} />)) 
-						: profile.positions.slice(0,3).map((position) => (<Position title={position.title} company={position.company} companyWebsite={position.companyWebsite} period={position.period} description={position.description} links={position.links} />))}
+						profile.positions.map((position, index) => (<Position key={index} title={position.title} company={position.company} companyWebsite={position.companyWebsite} period={position.period} description={position.description} links={position.links} />)) 
+						: profile.positions.slice(0, 3).map((position, index) => (<Position key={index} title={position.title} company={position.company} companyWebsite={position.companyWebsite} period={position.period} description={position.description} links={position.links} />))}
 					</div>
 					<div>
 					<button class="raised btn-secondary" onClick$={() => store.allPositions = !store.allPositions}>{store.allPositions ? 'Show less' : 'Show all'}</button>
@@ -56,7 +56,7 @@ export default component$(() => {
 					</div>
 					<div>
 						<div class="column">
-							{profile.skills.map((skill) => (<Skill name={skill.name} />))}
+							{profile.skills.map((skill, index) => (<Skill key={index} name={skill.name} />))}
 						</div>
 					</div>
 				</div>
@@ -69,7 +69,7 @@ export default component$(() => {
 						<h2>Tools</h2>
 					</div>
 					<div class="column">
-						{profile.tools.map((tool) => (<Skill name={tool.name} />))}
+						{profile.tools.map((tool, index) => (<Skill key={index} name={tool.name} />))}
 					</div>
 				</div>
 
@@ -82,7 +82,7 @@ export default component$(() => {
 					</div>
 					<div>
 						<div class="column">
-							{profile.languages.map((lang) => (<SkillBar name={lang.name} rating={lang.rating} />))}
+							{profile.languages.map((lang, index) => (<SkillBar key={index} name={lang.name} rating={lang.rating} />))}
 						</div>
 					</div>
 				</div>
@@ -96,7 +96,7 @@ export default component$(() => {
 					</div>
 					<div>
 						<div class="column">
-							{profile.activities.map((act) => (<h3>{act}</h3>))}
+							{profile.activities.map((act, index) => (<h3 key={index}>{act}</h3>))}
 						</div>
 					</div>
 				</div>
