@@ -4,7 +4,6 @@ import Position from '~/components/position/position';
 import SkillBar from '~/components/skill-bar/skill-bar';
 import Skill from '~/components/skill/skill';
 import Spectrum from '~/components/spectrums/spectrum';
-//import { Link } from '@builder.io/qwik-city';
 import profile from '../profile.service.json';
 
 export default component$(() => {
@@ -13,7 +12,6 @@ export default component$(() => {
 	return (
 		<div class="wrap main-layout">
 			
-
 			<div class="section_left">
 				<div class="section">
 					<div class="textContent">{profile.intro.map((paragraph, index) => (<p key={index}>{paragraph}</p>))}</div>
@@ -50,7 +48,7 @@ export default component$(() => {
 				<div class="section">
 					<div class="sectionHeader">
 						<div class="icon">
-							<img src="../../images/skills.png" />
+							<img src="../../images/skills.png" alt="A bow, symbolising skill" />
 						</div>
 						<h2>Skills</h2>
 					</div>
@@ -64,7 +62,7 @@ export default component$(() => {
 				<div class="section">
 					<div class="sectionHeader">
 						<div class="icon">
-							<img src="../../images/skills.png" />
+							<img src="../../images/skills.png" alt="A bow, symbolising skill" />
 						</div>
 						<h2>Tools</h2>
 					</div>
@@ -76,7 +74,7 @@ export default component$(() => {
 				<div class="section">
 					<div class="sectionHeader">
 						<div class="icon">
-							<img src="../../images/lang.png" />
+							<img src="../../images/lang.png" alt="A microphone, symbolising language" />
 						</div>
 						<h2>Languages</h2>
 					</div>
@@ -90,7 +88,7 @@ export default component$(() => {
 				<div class="section" style="border-bottom: none;">
 					<div class="sectionHeader">
 						<div class="icon">
-							<img src="../../images/activities.png" />
+							<img src="../../images/activities.png"  alt="A dumbbell, symbolising activity" />
 						</div>
 						<h2>Activities</h2>
 					</div>
@@ -105,7 +103,7 @@ export default component$(() => {
 				<div class="sectionHeader">
 					<a style="font-size: 1em;" href="https://github.com/rx-mikkel/" target="_blank">
 						<div class="icon linkIcon raised github">
-							<img src="../../images/gh.png" />
+							<img src="../../images/gh.png" alt="Github icon" />
 						</div>
 						<h2>GitHub</h2>
 					</a>
