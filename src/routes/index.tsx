@@ -29,7 +29,7 @@ export default component$(() => {
 				<div class="section">
 					<div class="sectionHeader" style="margin-bottom: 0px;">
 						<div class="icon">
-							<img src="../../images/experience.png" />
+							<img src="../../images/experience.svg" />
 						</div>
 						<h2>Experience</h2>
 					</div>
